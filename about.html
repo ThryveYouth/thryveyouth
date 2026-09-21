@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Thryve Youth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Thryve Youth</a>
+            <ul class="nav-links">
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="impact.html">Our Impact</a></li>
+                <li><a href="#" class="btn-donate">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Box 1: What is Thryve Youth? -->
+<div style="background: var(--white); padding: 2.5rem; border-radius: var(--radius); border: 1px solid var(--glass-border); box-shadow: 0 10px 30px rgba(15, 23, 42, 0.02); margin-bottom: 2.5rem; text-align: left; position: relative; overflow: hidden;">
+    
+    <!-- This gives it the top accent bar matching your theme -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(90deg, var(--secondary), var(--primary));"></div>
+    
+    <h3 style="font-size: 1.8rem; color: var(--dark); margin-bottom: 1rem;">What is Thryve Youth?</h3>
+    <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">
+        Thryve Youth is a non-profit organization dedicated to supporting the youth of our generation who struggle with mental health challenges. We reduce the gap between the vulnerable young people and the resources they need by providing safe spaces, peer mentorship, and accessible mental health education. Our mission is to empower the next generation from struggling to truly thriving.
+    </p>
+</div>
+
+<!-- Box 2: Why It Matters -->
+<div style="background: var(--white); padding: 2.5rem; border-radius: var(--radius); border: 1px solid var(--glass-border); box-shadow: 0 10px 30px rgba(15, 23, 42, 0.02); margin-bottom: 2.5rem; text-align: left; position: relative; overflow: hidden;">
+    
+    <!-- Top accent bar -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(90deg, var(--secondary), var(--primary));"></div>
+    
+    <h3 style="font-size: 1.8rem; color: var(--dark); margin-bottom: 1rem;">Why It Matters</h3>
+    <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">
+        Providing teens with mental health resources is vital as half of all mental health conditions begin by the age of 14, and early support prevents lifelong struggles. Neglecting these psychological conditions pushes a teenager further behind both emotionally and socially.
+    </p>
+</div>
+
+         <!-- Meet the Team Section -->
+<div style="margin-top: 6rem; text-align: center;">
+    <h3 style="font-size: 2rem; color: var(--dark); margin-bottom: 1rem;">Meet Our Leadership</h3>
+    <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 4rem;">The dedicated student advocates behind Thryve Youth working to make mental wellness support accessible.</p>
+    
+    <!-- Responsive Team Layout Flex Grid -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem;">
+        
+        <!-- Member 1 (Your Profile) -->
+        <div style="background: var(--white); padding: 2.5rem 2rem; border-radius: var(--radius); border: 1px solid var(--glass-border); width: 280px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.02); display: flex; flex-direction: column; align-items: center;">
+            <!-- Profile Picture Placeholder (You can swap this filename with a real picture!) -->
+            <img src="https://unsplash.com" 
+                 alt="Founder Portrait" 
+                 style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 4px solid var(--sage-light); margin-bottom: 1.5rem;">
+            <h4 style="color: var(--dark); font-size: 1.25rem; margin-bottom: 0.3rem;">Mokshita Saishri Velpuri</h4>
+            <p style="color: var(--primary); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem;">Founder & Lead Developer</p>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">Founded Thryve Youth to bridge the gap in local peer support networks and custom-coded this frontend web dashboard.</p>
+        </div>
+
+        <!-- Member 2 (Co-Founder or Friend) -->
+        <div style="background: var(--white); padding: 2.5rem 2rem; border-radius: var(--radius); border: 1px solid var(--glass-border); width: 280px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.02); display: flex; flex-direction: column; align-items: center;">
+            <img src="https://unsplash.com" 
+                 alt="Outreach Lead Portrait" 
+                 style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 4px solid var(--sage-light); margin-bottom: 1.5rem;">
+            <h4 style="color: var(--dark); font-size: 1.25rem; margin-bottom: 0.3rem;">Member 2</h4>
+            <p style="color: var(--secondary); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem;">role</p>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">role description</p>
+        </div>
+
+        <!-- Member 3 (Advisor or another Peer) -->
+        <div style="background: var(--white); padding: 2.5rem 2rem; border-radius: var(--radius); border: 1px solid var(--glass-border); width: 280px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.02); display: flex; flex-direction: column; align-items: center;">
+            <img src="https://unsplash.com" 
+                 alt="Operations Portrait" 
+                 style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 4px solid var(--sage-light); margin-bottom: 1.5rem;">
+            <h4 style="color: var(--dark); font-size: 1.25rem; margin-bottom: 0.3rem;">Member 3</h4>
+            <p style="color: var(--dark); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem;">role</p>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5;">role description</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+        
+    </main>
+
+    <footer><p>&copy; 2026 Thryve Youth.</p></footer>
+</body>
+</html>

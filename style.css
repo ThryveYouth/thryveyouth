@@ -1,0 +1,192 @@
+/* Modern Minimalist Global Theme */
+:root {
+    /* Extracted Logo Brand Colors */
+    --primary: #92d050;          /* The vibrant lime-sage green from 'youth' */
+    --secondary: #43bdab;        /* The soothing teal-green from the brain half */
+    --dark: #0076a3;             /* The deep teal-blue from 'Thryve' for high-contrast titles */
+    --sage-light: #d1ebd2;       /* Ultra-soft sage accent for subtle hover glows */
+    
+    /* Calming Background Elements */
+    --light-bg: #f5f4eb;         /* The warm, soft ivory cream background from your logo image */
+    --white: #ffffff;
+    --text-main: #2d3748;        /* Soft charcoal slate for easy reading text */
+    --text-muted: #5a6a85;       /* Muted grey-blue for subtitles */
+    --glass-bg: rgba(245, 244, 235, 0.8); /* Translucent navigation background matching the cream */
+    --glass-border: rgba(146, 208, 80, 0.2); /* Soft green frame border */
+    
+    /* Layout Variables */
+    --radius: 20px;              /* Extra rounded corners for a gentle, organic feel */
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--light);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Global Content Container */
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+/* Navigation Bar Layout */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary);
+}
+
+/* Interactive Buttons */
+.btn-donate {
+    background-color: var(--primary);
+    color: var(--white) !important;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-donate:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+/* Hero Section (Homepage Only) */
+/* Immersive Hero Graphic Area with Custom Theme Gradient */
+.hero {
+    /* This creates a calming gradient from your deep brand blue to your soothing teal */
+    background: linear-gradient(135deg, rgba(0, 118, 163, 0.9) 0%, rgba(67, 189, 171, 0.85) 100%), 
+                url('background.png') no-repeat center center/cover;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 2rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
+}
+
+
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; max-width: 600px; }
+
+/* Section Header Typography */
+.section-title {
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+/* Cards Layout Grid (Impact Page) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 3rem 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(45, 55, 72, 0.03); /* Lighter shadow to look clean against cream */
+    transition: var(--transition);
+    border: 1px solid rgba(146, 208, 80, 0.15); /* Soft sage green border accent */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Make the accent strip line use your new brand colors */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: var(--dark);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Global Footer */
+footer {
+    background-color: var(--dark);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
